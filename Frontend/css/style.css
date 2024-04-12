@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: hsl(322, 100%, 66%);
+  --primary-light: hsl(321, 100%, 78%);
+  --error-color: hsl(0, 100%, 63%);
+  --light-background: hsl(207, 100%, 98%);
+  --dark-background: hsl(192, 100%, 9%);
+  --neutral-color: hsl(0, 0%, 100%);
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER AND NAVIGATION STYLING */
+.header-section {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-cta-button {
+  border: 1.5px solid var(--primary-light);
+  color: var(--primary-light);
+  background: none;
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.2s all ease-in;
+}
+
+.nav-cta-button:hover {
+  box-shadow: 1px 1px 5px var(--primary-light);
+}
+
+/* INTRODUCTION STYLING */
+.introduction-header {
+  padding: 2rem 4rem;
+}
+
+.introduction-text {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
+.primary-button {
+  margin: 2rem;
+  border-radius: 30px;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--light-background);
+  background: var(--primary-color);
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s all ease-in;
+}
+
+.primary-button:hover {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  background: var(--primary-light);
+}
+
+/* MOCKUP IMAGE STYLING */
+.mockup-container {
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 8rem 0;
+}
+
+.mockup-container img {
+  width: 70%;
+}
+
+/* STATISTICS STYLING */
+.statistics-section {
+  margin: 8rem 0;
+}
+
+.statistics-container {
+  height: 100%;
+  justify-content: space-around;
+}
+
+.statistics-compartment {
+  padding: 1rem;
+}
+
+.statistics-figure {
+  font-size: 8rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.statistics-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: hsl(192, 10%, 80%);
+}
+
+/* ASIDE ADITIONAL STYLING */
+.additional-section {
+  margin: 8rem auto;
+  margin: 8rem inherit;
+}
+
+/* ASIDE ADITIONAL STYLING (GROW) */
+.additional-grow {
+  margin-bottom: 4rem;
+}
+
+.additional-bg-top {
+  margin-bottom: -1rem;
+}
+
+.additional-bg-top img,
+.additional-bg-bottom img {
+  width: 100%;
+  max-height: 15rem;
+}
+
+.align-container {
+  background: var(--light-background);
+}
+.grow-container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.additional-grow .additional-text p {
+  width: 30rem;
+}
+
+.additional-text,
+.additional-image {
+  flex: 1;
+}
+
+/* SUB UTILITY */
+.additional-image img {
+  width: 70%;
+}
+
+/* ASIDE ADITIONAL STYLING (FLOWING) */
+.additional-flowing {
+  gap: 5rem;
+  margin-bottom: 4rem;
+}
+
+.additional-flowing .additional-text p {
+  width: 46.5rem;
+}
+
+/* ASIDE ADITIONAL STYLING (USER) */
+.user-container {
+  background: var(--light-background);
+}
+
+.additional-user .additional-text {
+  padding: 0 8rem;
+}
+
+.additional-user .additional-text h2 {
+  width: 100%;
+}
+.additional-user .additional-text p {
+  width: 100%;
+}
+
+.additional-user .align-container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ASIDE ADITIONAL STYLING (BUTTON)  */
+.additional-button {
+  padding: 4rem;
+}
+
+.additional-button h2 {
+  font-size: 3rem;
+}
+
+/* FOOTER TOP BACKGROUND IMAGE */
+.footer-bg-top img {
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+/* FOOTER STYLING */
+.footer-section {
+  background: var(--dark-background);
+  color: var(--light-background);
+}
+
+.footer-section .align-container {
+  height: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  gap: 8rem;
+  background: var(--dark-background);
+}
+
+/* FOOTER GENERAL COMPARTMENT STYLING */
+.footer-compartment {
+  flex: 1;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+/* FOOTER UTILITY */
+.footer-text {
+  width: 40rem;
+  line-height: 1.5rem;
+}
+
+/* FOOTER LEFT COMPARTMENT STYLING */
+.footer-phone,
+.footer-email {
+  gap: 1rem;
+}
+.footer-phone img,
+.footer-email img {
+  width: 1.5rem;
+}
+.footer-section a {
+  text-decoration: none;
+  color: var(--neutral-color);
+}
+
+.footer-socials {
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.footer-socials a {
+  border-radius: 50%;
+  border: var(--neutral-color) solid 1.5px;
+  color: var(--neutral-color);
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.2s ease-in;
+}
+
+.footer-socials a:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+/* FOOTER RIGHT COMPARTMENT STYLING */
+.footer-compartment:nth-child(2) h3 {
+  font-size: 2.5rem;
+}
+
+.footer-compartment:nth-child(2) form {
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+}
+.footer-compartment:nth-child(2) input {
+  padding: 1rem;
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  grid-column: 1 / span 4;
+}
+
+.footer-compartment:nth-child(2) form button {
+  border: none;
+  background: var(--primary-color);
+  color: var(--neutral-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  grid-column: 5 / span 1;
+  transition: all 0.2 ease-in;
+}
+
+.email-input:focus {
+  outline: hsl(0, 6%, 24%) 1px solid;
+}
+
+.footer-compartment:nth-child(2) form button:hover {
+  background: var(--primary-light);
+}
+
+/* JAVASCRIPT CLASSES USED TO MANIPULATE THE VALIDATION  */
+.error-message {
+  position: absolute;
+  bottom: -2rem;
+  left: 5px;
+  color: transparent;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.error-border {
+  border: 1.5px solid var(--error-color) !important;
+}
+
+.form-correct {
+  color: transparent;
+}
+
+/* ATTRIBUTION STYLING */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: var(--dark-background);
+  color: var(--neutral-color);
+  padding: 2rem;
+  margin-top: -1rem;
+}
+.attribution a {
+  color: var(--neutral-color);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+#backToTop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  border: none;
+  outline: none;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+}

@@ -1,0 +1,59 @@
+/* ALL UTILITY CLASSES ARE MARKED WITH UBDERSCORE */
+
+.header_primary {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text_primary {
+  font-size: 1.4rem;
+  line-height: 2.25rem;
+}
+
+.max_width {
+  max-width: 140rem;
+  margin: 8rem auto;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+.d_f {
+  display: flex;
+}
+
+.d_g {
+  display: grid;
+}
+
+.ai_c {
+  align-items: center;
+}
+
+.ai_s {
+  align-items: flex-start;
+}
+
+.jc_c {
+  justify-content: center;
+}
+.fd_c {
+  flex-direction: column;
+}
+
+.gp_5 {
+  gap: 5rem;
+}
+
+.bg_neutral {
+  background: #fff;
+}
+
+.bg_light {
+  background: var(--light-background);
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
